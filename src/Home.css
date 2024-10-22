@@ -1,0 +1,82 @@
+.home {
+  text-align: center;
+  padding: 60px 20px; /* Add padding to separate content from the header */
+  background-color: #f8f8f8; /* Light background color */
+}
+
+.banner {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 50px; /* Add margin at the top to move the banner downwards */
+}
+
+.banner img {
+  width: 133%;
+  height: auto; /* Ensures image is responsive */
+  max-height: 400px; /* Maximum height for the banner image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.banner h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for readability */
+}
+
+/* Optional: Adjust the margin or padding values as necessary for better spacing */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  max-width: 1000px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 500px; /* Adjust this to fit as per requirement */
+}
+
+.card img {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.card h3 {
+  color: #b30000;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 90%;
+  }
+
+  .banner {
+      margin-top: 30px; /* Adjust the margin for smaller screens */
+  }
+}
